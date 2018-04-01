@@ -1,0 +1,14 @@
+{
+  "name": "paw-fetch-generator",
+  "version": "1.1.0",
+  "description": "Paw extension to generate  Fetch.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/caoer/FetchCodeGenerator"
+  },
+  "author": "Zitao Xiong <caoer115@gmail.com>",
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/caoer/FetchCodeGenerator/blob/master/LICENSE"
+  }
+}

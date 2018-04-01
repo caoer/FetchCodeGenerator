@@ -1,0 +1,19 @@
+{{#request.name}}## {{{request.name}}}
+{{/request.name}}{{#request.cURLDescription}}
+{{{request.cURLDescription}}}
+{{/request.cURLDescription}}
+
+fetch('{{{request.url}}}', {
+   method: '{{{request.method}}}',
+   {{#headers.has_headers}}
+   headers: {
+   {{#headers.header_list}}
+     '{{{header_name}}}': '{{{header_value}}}',
+   {{/headers.header_list}}
+   },
+   {{/headers.has_headers}}
+   {{#body.has_raw_body_with_tabs_or_new_lines}}
+    body: {{{body.raw_body}}},
+   {{/body.has_raw_body_with_tabs_or_new_lines}}
+})
+
